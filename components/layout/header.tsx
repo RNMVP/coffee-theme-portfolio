@@ -1,8 +1,6 @@
-import { ThemeSwitch } from "./theme-switch";
-
-import { title } from "./primitives";
-import LottieJsonComponent from "./lottieJson";
-import SwitchTheme from "./switchTheme";
+import { title } from "../primitives";
+import LottieJsonComponent from "../lottieJson";
+import SwitchTheme from "../switchTheme";
 
 export function Header({ className }: { className?: string }) {
   return (
