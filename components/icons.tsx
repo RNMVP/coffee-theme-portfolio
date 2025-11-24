@@ -185,3 +185,103 @@ export const SearchIcon = (props: IconSvgProps) => (
     />
   </svg>
 );
+
+export const BrazilIcon = (props: IconSvgProps) => (
+  <svg
+    aria-hidden="true"
+    fill="none"
+    focusable="false"
+    height="1em"
+    role="presentation"
+    viewBox="0 0 24 24"
+    width="1em"
+    {...props}
+  >
+    {/* Fundo verde */}
+    <rect x="2" y="2" width="20" height="20" rx="10" fill="#009739" />
+    {/* Losango amarelo */}
+    <path d="M12 6L18 12L12 18L6 12Z" fill="#FFCC29" />
+    {/* Círculo azul */}
+    <circle cx="12" cy="12" r="3.5" fill="#3E4095" />
+    {/* Faixa branca */}
+    <path
+      d="M9.5 13C10 11.8 11 11 12 11C13 11 14 11.8 14.5 13"
+      stroke="#FFFFFF"
+      strokeWidth="0.6"
+      fill="none"
+      strokeLinecap="round"
+    />
+  </svg>
+);
+
+export const UnitedStatesIcon = (props: IconSvgProps) => (
+  <svg
+    aria-hidden="true"
+    fill="none"
+    focusable="false"
+    height="1em"
+    role="presentation"
+    viewBox="0 0 24 24"
+    width="1em"
+    {...props}
+  >
+    {/* Listras vermelhas e brancas */}
+    <rect x="2" y="2" width="20" height="1.54" fill="#B22234" />
+    <rect x="2" y="3.54" width="20" height="1.54" fill="#FFFFFF" />
+    <rect x="2" y="5.08" width="20" height="1.54" fill="#B22234" />
+    <rect x="2" y="6.62" width="20" height="1.54" fill="#FFFFFF" />
+    <rect x="2" y="8.16" width="20" height="1.54" fill="#B22234" />
+    <rect x="2" y="9.7" width="20" height="1.54" fill="#FFFFFF" />
+    <rect x="2" y="11.24" width="20" height="1.54" fill="#B22234" />
+    <rect x="2" y="12.78" width="20" height="1.54" fill="#FFFFFF" />
+    <rect x="2" y="14.32" width="20" height="1.54" fill="#B22234" />
+    <rect x="2" y="15.86" width="20" height="1.54" fill="#FFFFFF" />
+    <rect x="2" y="17.4" width="20" height="1.54" fill="#B22234" />
+    <rect x="2" y="18.94" width="20" height="1.54" fill="#FFFFFF" />
+    <rect x="2" y="20.48" width="20" height="1.52" fill="#B22234" />
+
+    {/* Cantão azul */}
+    <rect x="2" y="2" width="8.8" height="8.47" fill="#3C3B6E" />
+
+    {/* Estrelas brancas (simplificadas em grid) */}
+    <g fill="#FFFFFF">
+      <circle cx="3.5" cy="3.2" r="0.35" />
+      <circle cx="5" cy="3.2" r="0.35" />
+      <circle cx="6.5" cy="3.2" r="0.35" />
+      <circle cx="8" cy="3.2" r="0.35" />
+      <circle cx="9.5" cy="3.2" r="0.35" />
+
+      <circle cx="4.25" cy="4.4" r="0.35" />
+      <circle cx="5.75" cy="4.4" r="0.35" />
+      <circle cx="7.25" cy="4.4" r="0.35" />
+      <circle cx="8.75" cy="4.4" r="0.35" />
+
+      <circle cx="3.5" cy="5.6" r="0.35" />
+      <circle cx="5" cy="5.6" r="0.35" />
+      <circle cx="6.5" cy="5.6" r="0.35" />
+      <circle cx="8" cy="5.6" r="0.35" />
+      <circle cx="9.5" cy="5.6" r="0.35" />
+
+      <circle cx="4.25" cy="6.8" r="0.35" />
+      <circle cx="5.75" cy="6.8" r="0.35" />
+      <circle cx="7.25" cy="6.8" r="0.35" />
+      <circle cx="8.75" cy="6.8" r="0.35" />
+
+      <circle cx="3.5" cy="8" r="0.35" />
+      <circle cx="5" cy="8" r="0.35" />
+      <circle cx="6.5" cy="8" r="0.35" />
+      <circle cx="8" cy="8" r="0.35" />
+      <circle cx="9.5" cy="8" r="0.35" />
+    </g>
+
+    {/* Borda arredondada aplicada por clip-path */}
+    <defs>
+      <clipPath id="flag-clip">
+        <rect x="2" y="2" width="20" height="20" rx="10" />
+      </clipPath>
+    </defs>
+    <g clipPath="url(#flag-clip)">
+      <rect x="2" y="2" width="20" height="20" fill="none" />
+    </g>
+  </svg>
+);
